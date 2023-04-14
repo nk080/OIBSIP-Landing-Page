@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Lamborghini</title>
+    <link rel="shorcut icon" href="Lamborghini logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/45e50151b6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <img src="Lamborghini logo.png" alt="logo">
+            <ul class="nav-link">
+                <a href="#model">Model</a>
+                <a href="#accesoris">Accesoris</a>
+                <a href="#services">Services</a>
+                <a href="#discover">Discover</a>
+                <div class="search">
+                    <input type="text" placeholder="Find Your Lamborghini">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </div>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="text">
+                <span>The Lamborghini X6:All Highligt</span>
+                <h1>The x6 msi06</h1>
+                <a href="#" class="btn">Config & Pricing</a>
+            </div>
+            <div class="big-image">
+                <img id="img" src="images/car1.png" alt="">
+            </div>
+           
+            </div>
+            <div class="small-car">
+                <img onclick="myCars(this.src)" src="images/car2.png" alt="">
+                <img onclick="myCars(this.src)" src="images/car3.png" alt="">
+                <img onclick="myCars(this.src)" src="images/car4.png" alt="">
+                <img onclick="myCars(this.src)" src="images/car5.png" alt="">
+        </div>
+
+    </div>
+    <script>
+        let bigImage = document.getElementById('img')
+        function myCars(car){
+            bigImage.src = car 
+        }
+    </script>
+</body>
+
+</html>
